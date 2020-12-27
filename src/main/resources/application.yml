@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      function:
+        definition: receiveNotification
+      bindings:
+        receiveNotification-in-0:
+          destination: notification
+        notification-out-0:
+          destination: notification
